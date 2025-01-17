@@ -1,0 +1,69 @@
+/* blinking NAVBAR eyes */
+@keyframes blink {
+  0%,
+  100% {
+    content: url("../static/images/eye.png"); /* fully open eyes */
+  }
+  40% {
+    content: url("../static/images/eye.png"); /* fully open eyes */
+  }
+  41% {
+    content: url("../static/images/eye2.png"); /* half-closed eyes */
+  }
+  42% {
+    content: url("../static/images/eye3.png"); /* almost closed eyes */
+  }
+  43% {
+    content: url("../static/images/eye4.png"); /*43% 4 */
+  }
+  49% {
+    content: url("../static/images/eye4.png"); /* 7 */
+  }
+  54% {
+    content: url("../static/images/eye4.png"); /* 6 */
+  }
+  55% {
+    content: url("../static/images/eye4.png"); /* 6 */
+  }
+  56% {
+    content: url("../static/images/eye4.png"); /* 6 */
+  }
+  60% {
+    content: url("../static/images/eye4.png"); /* 5 */
+  }
+  65% {
+    content: url("../static/images/eye4.png"); /*49% until 52% 4 */
+  }
+  66% {
+    content: url("../static/images/eye3.png"); /* almost closed eyes */
+  }
+  67% {
+    content: url("../static/images/eye2.png"); /* half-closed eyes */
+  }
+  68% {
+    content: url("../static/images/eye.png"); /* back to fully open */
+  }
+}
+
+.blinking-eyes {
+  animation: blink 6s infinite; /* 4s */
+  width: 133px;
+  height: 64px;
+}
+
+/* FOR GENERAL USE */
+.bigger-font {
+  font-size: 1.5em;
+}
+/* FOR PRICE UNDERLINE DECORATION */
+.text-decoration-underline {
+  text-underline-offset: 7px;
+}
+
+@media (max-width: 426px) {
+  .custom-center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
